@@ -6,18 +6,17 @@ The demo is a basic CRUD application, which simply holds two entities *Artist* a
 ## Usage
 
 __Build__
-```
+```bash
 mvn clean install
 ```
 __Run__
 
-From bash:
-```
+```bash
 ./run.sh
 ```
 
 or
-```
+```bash
 java -jar ./target/graphql-demo-0.0.1-SNAPSHOT.jar
 ```
 
@@ -71,6 +70,6 @@ mutation {
 ```
 
 __Shutdown__
-```
+```bash
 curl -X POST localhost:8080/actuator/shutdown
 ```
