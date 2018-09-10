@@ -54,6 +54,17 @@ mutation {
 }
 ```
 
+Create a song:
+```
+mutation {
+  createSong(artist: "Madonna", duration: 5, genre: "Pop", title: "Material Girl") {
+    duration
+    genre
+    title
+    songId
+  }
+}
+
 __Shutdown__
 ```
 curl -X POST localhost:8080/actuator/shutdown
