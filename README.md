@@ -1,5 +1,5 @@
 # graphql-demo
-This is a basic CRUD application build using spring-boot and Java for learning basic GraphQL(https://graphql.org/) features. The application holds two in-memory entities *Artist* and *Song* and exposes the entities through basic GraphQL queries. The user can list all the artists and the songs created by the artist. Other supported functions include creating new artist and songs through queries. Example usage is given below:
+This is a basic CRUD application build using spring-boot and Java for learning basic GraphQL(https://graphql.org/) features. The application holds two in-memory entities *Artist* and *Song* and exposes the entities through basic GraphQL queries. The user can list all the artists as well as the songs created by the artist. Other supported functions include creating new artist and songs through queries. Example usage is given below:
 
 ## Usage
 
