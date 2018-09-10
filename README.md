@@ -1,7 +1,5 @@
-## graphql-demo
-This is a spring-boot Java application for exploring GraphQL(https://graphql.org/) features.
-
-The demo is a basic CRUD application, which simply holds two entities *Artist* and *Song* by the artist. 
+# graphql-demo
+This is a basic CRUD application build using spring-boot and Java for learning basic GraphQL(https://graphql.org/) features. The application holds two in-memory entities *Artist* and *Song* by the artist and exposes the entities through basic GraphQL queries. The user can list all the artists and the songs created by the artist. Other supported functions include creating new artist and songs through queries. Example usage is given below:
 
 ## Usage
 
@@ -27,6 +25,11 @@ Open the following link in the browser:
 http://localhost:8080/graphiql
 ```
 TheGraphiQL UI provides an interactive UI for running the GraphQL queries and supports auto complete.
+
+__Shutdown__
+```bash
+curl -X POST localhost:8080/actuator/shutdown
+```
 
 ## Some basic operations:
 
@@ -67,9 +70,4 @@ mutation {
     songId
   }
 }
-```
-
-__Shutdown__
-```bash
-curl -X POST localhost:8080/actuator/shutdown
 ```
